@@ -1,0 +1,5 @@
+print ("Nome: Jefferson Camargo Coelho")
+print ("Idade: 18")
+print ("Cidade: Bom Jesus dos Perdões - SP")
+print ("Hobby: Investir em ações e criar uma rendapassiva")
+print ("Duvidas sobre Python: Assim como em toda lingua nova, acredito que as maiores duvidas sejam a variedade de codigos e como usa-los")
