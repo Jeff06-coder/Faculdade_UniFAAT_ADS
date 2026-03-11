@@ -1,0 +1,23 @@
+CREATE DATABASE Aulas_databaseS
+
+CREATE TABLE aula02 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    idade INT,
+    cidade VARCHAR(120),
+    profissao VARCHAR(100)
+);
+
+INSERT INTO aula02 (nome, idade, cidade, profissao) VALUES
+('Antonio', 22, 'Bela Vista', 'Engenheiro de Software'),
+('Mariana', 35, 'Rio Morais', 'Desenvolvedora Back-end'),
+('Santos Silva', 15, 'São Paulo', 'Analista de Dados'),
+('Vera', 28, 'Cunha ', 'Vendedora');
+
+-- Verificando a inserção
+SELECT * FROM aula02;
+
+SELECT * FROM aula02 WHERE idade > 30;
+
+
+
