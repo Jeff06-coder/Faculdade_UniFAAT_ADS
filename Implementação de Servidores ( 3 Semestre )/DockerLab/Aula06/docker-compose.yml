@@ -1,0 +1,25 @@
+services:
+  # Serviço 1: Frontend (App Web)
+  web_app:
+    build:
+      context: ./app            # Instrução para construir a partir do Dockerfile
+      dockerfile: Dockerfile
+    container_name: compose-web-lab6
+    ports:
+      - "8000:80"              # Mapeamento para o acesso externo (Host 8000 -> Contêiner 80)
+    environment:
+      - DB_HOST=db_cache        # Variável para referência interna (DNS Interno)
+    depends_on:
+      - db_cache               # Garante que o DB inicie primeiro
+
+  # Serviço 2: Database (Redis)
+  db_cache:
+    image: redis:alpine
+    container_name: compose-redis-lab6
+    volumes:
+      - redis_data_lab6:/data  # Monta volume nomeado para persistência de dados
+
+volumes:
+  # Definição explícita do volume nomeado
+  redis_data_lab6:
+    driver: local
