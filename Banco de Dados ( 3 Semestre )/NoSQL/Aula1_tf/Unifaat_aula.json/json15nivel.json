@@ -1,0 +1,33 @@
+db.niveis.insertOne({
+  nivel1: {
+    nivel2: {
+      nivel3: {
+        nivel4: {
+          nivel5: {
+            nivel6: {
+              nivel7: {
+                nivel8: {
+                  nivel9: {
+                    nivel10: {
+                      nivel11: {
+                        nivel12: {
+                          nivel13: {
+                            nivel14: {
+                              nivel15: {
+                                valor: "cheguei_no_nivel_15"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+})
